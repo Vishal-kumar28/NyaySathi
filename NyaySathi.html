@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indian Legal Assistant</title>
+    <link rel="stylesheet" href="NyaySathi.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="navbar-brand">Indian Legal Assistant</div>
+            <div class="navbar-links">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#legal-docs">Legal Documents</a></li>
+                    <li><a href="#document-drafter">Document Drafter</a></li>
+                    <li><a href="#know-your-rights">Know Your Rights</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="navbar-actions">
+                <button><a href="login.html" class="btn">Login</a></button>
+                <button><a href="sign Up.html" class="btn">Sign Up</a></button>
+            </div>
+        </nav>
+    </header>
+
+    <div class="hero-section" id="home">
+        <h1>Welcome to Indian Legal Assistant</h1>
+        <p>Your one-stop solution for legal assistance in India.</p>
+    </div>
+
+    <main>
+        <section id="indian-legal-assistant">
+            <h2>Indian Legal Assistant</h2>
+            <p>Get assistance with Indian laws, legal documents, and more.</p>
+            <div class="assistant-features">
+                <div class="feature">
+                    <h3>Legal Document Drafting</h3>
+                    <p>Get customized legal documents, including contracts, agreements, and notices.</p>
+                </div>
+                <div class="feature">
+                    <h3>Indian Law Guidance</h3>
+                    <p>Get guidance on Indian laws, including IPC, CrPC, CPC, and more.</p>
+                </div>
+                <div class="feature">
+                    <h3>Legal Advice</h3>
+                    <p>Get legal advice from experienced professionals.</p>
+                </div>
+            </div>
+            <button>Get Started</button>
+        </section>
+
+        <section id="legal-docs">
+            <h2>Legal Documents</h2>
+            <p>Get access to a wide range of legal documents, including contracts, agreements, and more.</p>
+            <div class="document-categories">
+                <div class="category">
+                    <h3>Contracts</h3>
+                    <ul>
+                        <li><a href="#">Employment Contract</a></li>
+                        <li><a href="#">Service Agreement</a></li>
+                        <li><a href="#">Partnership Agreement</a></li>
+                    </ul>
+                </div>
+                <div class="category">
+                    <h3>Agreements</h3>
+                    <ul>
+                        <li><a href="#">Non-Disclosure Agreement</a></li>
+                        <li><a href="#">Memorandum of Understanding</a></li>
+                        <li><a href="#">Joint Venture Agreement</a></li>
+                    </ul>
+                </div>
+                <div class="category">
+                    <h3>Notices</h3>
+                    <ul>
+                        <li><a href="#">Notice to Vacate</a></li>
+                        <li><a href="#">Notice of Termination</a></li>
+                        <li><a href="#">Notice of Default</a></li>
+                    </ul>
+                </div>
+            </div>
+            <button>View All Documents</button>
+        </section>
+
+        <section id="document-drafter">
+            <h2>Document Drafter</h2>
+            <p>Create customized legal documents with our document drafter tool.</p>
+            <div class="drafter-options">
+                <label for="document-type">Select Document Type:</label>
+                <select id="document-type" name="document-type">
+                    <option value="contract">Contract</option>
+                    <option value="agreement">Agreement</option>
+                    <option value="notice">Notice</option>
+                </select>
+                <label for="document-template">Select Document Template:</label>
+                <select id="document-template" name="document-template">
+                    <option value="template1">Template 1</option>
+                    <option value="template2">Template 2</option>
+                    <option value="template3">Template 3</option>
+                </select>
+            </div>
+            <div class="drafter-inputs">
+                <label for="party1-name">Party 1 Name:</label>
+                <input type="text" id="party1-name" name="party1-name">
+                <label for="party2-name">Party 2 Name:</label>
+                <input type="text" id="party2-name" name="party2-name">
+                <label for="document-date">Document Date:</label>
+                <input type="date" id="document-date" name="document-date">
+            </div>
+            <button>Generate Document</button>
+            <div class="document-output">
+                <h3>Generated Document:</h3>
+                <textarea id="document-output-text" name="document-output-text" readonly></textarea>
+            </div>
+        </section>
+
+        <!-- ✅ Added: Know Your Rights -->
+        <section id="know-your-rights">
+            <h2>Know Your Rights</h2>
+            <p>As an Indian citizen, you are entitled to rights protected under the Constitution of India:</p>
+            <ul>
+                <li><strong>Right to Equality:</strong> Equal protection of the law for every citizen.</li>
+                <li><strong>Right to Freedom:</strong> Freedom of speech, expression, and movement.</li>
+                <li><strong>Right against Exploitation:</strong> Prohibition of trafficking and forced labor.</li>
+                <li><strong>Right to Constitutional Remedies:</strong> Approach courts for enforcement of rights.</li>
+            </ul>
+        </section>
+
+        <!-- ✅ Added: Quick Law Guides -->
+        <section id="law-guides">
+            <h2>Quick Guides to Indian Laws</h2>
+            <div class="law-card">
+                <h3>Indian Penal Code (IPC)</h3>
+                <p>Defines criminal offenses. Example: <strong>Section 420</strong> – Cheating and dishonestly inducing delivery of property.</p>
+            </div>
+            <div class="law-card">
+                <h3>Criminal Procedure Code (CrPC)</h3>
+                <p>Outlines procedures for investigation, arrest, trial, and bail. Example: <strong>Section 154</strong> – Lodging an FIR.</p>
+            </div>
+            <div class="law-card">
+                <h3>Civil Procedure Code (CPC)</h3>
+                <p>Regulates civil cases such as property disputes, contracts, and family matters.</p>
+            </div>
+        </section>
+
+        <!-- ✅ Added: FAQs -->
+        <section id="legal-faqs">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq">
+                <h4>❓ How can I file an FIR?</h4>
+                <p>Visit the nearest police station, provide details, and request a written acknowledgment.</p>
+            </div>
+            <div class="faq">
+                <h4>❓ What should I do if I am arrested?</h4>
+                <p>You have the right to remain silent, request legal aid, and be presented before a magistrate within 24 hours.</p>
+            </div>
+            <div class="faq">
+                <h4>❓ Can I represent myself in court?</h4>
+                <p>Yes, self-representation is allowed, though hiring a lawyer is advisable for complex cases.</p>
+            </div>
+        </section>
+
+        <!-- ✅ Added: Legal Helplines -->
+        <section id="legal-helplines">
+            <h2>Important Helplines</h2>
+            <ul>
+                <li>🚨 Police Emergency: <strong>100</strong></li>
+                <li>👩‍⚖️ Women Helpline: <strong>1091</strong></li>
+                <li>📞 Child Helpline: <strong>1098</strong></li>
+                <li>📋 Legal Aid (NALSA): <strong>15100</strong></li>
+            </ul>
+        </section>
+
+        <!-- Floating Chatbot Button -->
+        <div id="chat-toggle">💬</div>
+
+        <!-- Chatbot UI -->
+        <section id="legal-chatbot">
+            <div class="chat-header">
+                <span>⚖️ Legal Assistant</span>
+                <button id="close-chat">✖</button>
+            </div>
+
+            <div id="chat-body">
+                <div class="bot-message">Hello! Ask me about IPC, CrPC, or legal procedures.</div>
+            </div>
+
+            <div class="chat-input">
+                <input type="text" id="user-question" placeholder="Type your question..." />
+                <button id="ask-button">➤</button>
+            </div>
+        </section>
+
+        <section id="vernacular-support">
+            <h2>Vernacular Support</h2>
+            <p>We support multiple languages to cater to a diverse range of users.</p>
+            <div class="language-options">
+                <label for="language">Select Language:</label>
+                <select id="language" name="language">
+                    <option value="english">English</option>
+                    <option value="hindi">Hindi</option>
+                    <option value="marathi">Marathi</option>
+                    <option value="tamil">Tamil</option>
+                    <option value="telugu">Telugu</option>
+                </select>
+            </div>
+            <div class="region-options">
+                <label for="region">Select Region:</label>
+                <select id="region" name="region">
+                    <option value="india">India</option>
+                    <option value="maharashtra">Maharashtra</option>
+                    <option value="tamil-nadu">Tamil Nadu</option>
+                    <option value="telangana">Telangana</option>
+                </select>
+            </div>
+            <button>Apply</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Indian Legal Assistant</p>
+    </footer>
+    <script src="NyaySathi.js"></script>
+</body>
+</html>

@@ -1,0 +1,418 @@
+/* 🌐 Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: #f5f7fa;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* 🌐 Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #0d47a1;
+  padding: 1rem 2rem;
+  color: #fff;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.navbar-links ul {
+  list-style: none;
+  display: flex;
+  gap: 1.2rem;
+}
+
+.navbar-links a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.navbar-links a:hover {
+  color: #ffcc00;
+}
+
+.navbar-actions button {
+  background: #ffcc00;
+  border: none;
+  padding: 0.5rem 1rem;
+  margin-left: 0.5rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.navbar-actions button:hover {
+  background: #ffc107;
+  transform: scale(1.05);
+}
+
+.navbar-actions a {
+  text-decoration: none;
+  color: #000;
+}
+
+/* 🌐 Hero Section */
+.hero-section {
+  text-align: center;
+  padding: 4rem 2rem;
+  background: linear-gradient(rgba(13,71,161,0.8), rgba(13,71,161,0.8)), url('law-bg.jpg') center/cover no-repeat;
+  color: #fff;
+}
+
+.hero-section h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero-section p {
+  font-size: 1.2rem;
+}
+
+/* 🌐 Section Styling */
+main section {
+  padding: 3rem 2rem;
+  background: #fff;
+  margin: 1.5rem auto;
+  border-radius: 10px;
+  max-width: 1100px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+h2 {
+  margin-bottom: 1rem;
+  color: #0d47a1;
+}
+
+button {
+  margin-top: 1rem;
+  padding: 0.7rem 1.2rem;
+  background: #0d47a1;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #1565c0;
+  transform: translateY(-2px);
+}
+
+/* 🌐 Features */
+.assistant-features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.feature {
+  padding: 1.2rem;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background: #f9f9f9;
+  transition: 0.3s;
+}
+
+.feature:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+}
+
+/* 🌐 Document Categories */
+.document-categories {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.2rem;
+}
+
+.category {
+  background: #eef3fc;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.category h3 {
+  margin-bottom: 0.8rem;
+  color: #1565c0;
+}
+
+.category ul {
+  list-style: none;
+}
+
+.category ul li {
+  margin: 0.4rem 0;
+}
+
+.category ul a {
+  text-decoration: none;
+  color: #333;
+  transition: 0.3s;
+}
+
+.category ul a:hover {
+  color: #0d47a1;
+  text-decoration: underline;
+}
+
+/* ==========================
+   Drafter Section
+========================== */
+.drafter-options, .drafter-inputs {
+  margin: 15px 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.drafter-options label, .drafter-inputs label {
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+input, select, textarea {
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #bbb;
+  outline: none;
+}
+
+textarea {
+  width: 100%;
+  height: 150px;
+  margin-top: 10px;
+}
+/* ==========================
+   Quick Guides
+========================== */
+.law-card {
+  background: #f1faff;
+  border-left: 5px solid #0066cc;
+  padding: 15px;
+  margin: 15px 0;
+  border-radius: 8px;
+}
+
+/* ==========================
+   FAQs
+========================== */
+.faq {
+  background: #fff3cd;
+  padding: 15px;
+  margin: 12px 0;
+  border-radius: 8px;
+  border-left: 5px solid #ffcc00;
+}
+
+
+
+
+
+
+
+/* 🌐 Chatbot Box */
+#legal-chatbot {
+  position: fixed;
+  bottom: 80px; /* above the toggle button */
+  right: 20px;
+  width: 320px;
+  max-height: 450px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+  padding: 1rem;
+  z-index: 2000;
+  display: none; /* initially hidden */
+  flex-direction: column;
+}
+
+#legal-chatbot h2 {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  text-align: center;
+  color: #0d47a1;
+}
+
+#legal-chatbot textarea {
+  resize: none;
+  width: 100%;
+  height: 100px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  padding: 0.7rem;
+  font-size: 0.9rem;
+}
+
+#legal-chatbot button {
+  margin-top: 0.7rem;
+  background: #0d47a1;
+  color: #fff;
+  border: none;
+  padding: 0.6rem;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#legal-chatbot button:hover {
+  background: #1565c0;
+}
+
+#ai-response {
+  flex: 1;
+  overflow-y: auto;
+  margin-top: 0.8rem;
+  border: 1px solid #eee;
+  padding: 0.6rem;
+  border-radius: 8px;
+  background: #fafafa;
+  font-size: 0.9rem;
+}
+
+
+/* 🌐 Footer */
+footer {
+  text-align: center;
+  background: #0d47a1;
+  color: #fff;
+  padding: 1.2rem;
+  margin-top: 2rem;
+}
+
+/* Chat Toggle Button */
+#chat-toggle {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #0d47a1;
+  color: #fff;
+  font-size: 1.5rem;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+  z-index: 2000;
+  transition: transform 0.2s;
+}
+
+#chat-toggle:hover {
+  transform: scale(1.1);
+  background: #1565c0;
+}
+
+/* Chatbot Box */
+#legal-chatbot {
+  position: fixed;
+  bottom: 85px;
+  right: 20px;
+  width: 320px;
+  height: 420px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.25);
+  display: none; /* hidden initially */
+  flex-direction: column;
+  overflow: hidden;
+  z-index: 1999;
+}
+
+/* Chat Header */
+.chat-header {
+  background: #0d47a1;
+  color: #fff;
+  padding: 10px;
+  font-size: 1rem;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.chat-header button {
+  background: transparent;
+  border: none;
+  color: #fff;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+/* Chat Body */
+#chat-body {
+  flex: 1;
+  padding: 10px;
+  overflow-y: auto;
+  background: #f9f9f9;
+}
+
+.bot-message {
+  background: #e3f2fd;
+  padding: 8px 12px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  max-width: 80%;
+}
+
+.user-message {
+  background: #0d47a1;
+  color: #fff;
+  padding: 8px 12px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  max-width: 80%;
+  margin-left: auto;
+}
+
+/* Chat Input */
+.chat-input {
+  display: flex;
+  padding: 8px;
+  border-top: 1px solid #ddd;
+  background: #fff;
+}
+
+.chat-input input {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  margin-right: 5px;
+}
+
+.chat-input button {
+  background: #0d47a1;
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.chat-input button:hover {
+  background: #1565c0;
+}
